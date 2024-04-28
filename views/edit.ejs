@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main h-screen w-full bg-gray-700">
+        <div class="form p-10 text-white">
+            <form action="/edited" method="post">
+                <input name="head" class="block w-full rounded-md outlin-none px-5 py-2 bg-zinc-800" type="text" placeholder="Title" value="<%= user %>">
+                <textarea name="dets" class="block w-full rounded-md outlin-none px-5 mt-2 py-2 bg-zinc-800 resize-none" placeholder="Write your tasks" name="dets"><%= data %></textarea>
+                <input type="submit" class="mt-2 bg-blue-600 px-5 py-2 rounded-md" value="Update Task">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
